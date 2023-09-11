@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common-head (title)">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}" th:if="${_csrf}"/>
+    <meta id="_csrf_header" th:content="${_csrf.headerName}" th:if="${_csrf}" th:name="_csrf_header"/>
+
+    <!-- Font Awesome CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"  crossorigin="anonymous">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- jQuery UI CSS from CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Data Tables CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+
+    <!-- Other CSS files -->
+<!--    <link rel="stylesheet" th:href="@{/css/formValidation.min.css}" th:if="${formValidation}" type="text/css">-->
+<!--    <link rel="stylesheet" th:href="@{/css/show-password-toggle.min.css}" th:if="${togglePassword}" type="text/css">-->
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+    <title th:text="${title} ? '..:: Spring Boot Starter | ' + ${title} + ' ::..' : _"></title>
+</head>
+<body>
+<!-- Body content here -->
+
+<!-- Common scripts -->
+<th:block th:fragment="common-scripts">
+    <!-- jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- DataTables JS from CDN -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <!-- Other Scripts -->
+<!--    <th:block th:if="${formValidation}">-->
+<!--        <script th:src="@{/js/form-validation/FormValidation.min.js}"></script>-->
+<!--        <script th:src="@{/js/form-validation/Bootstrap5.min.js}"></script>-->
+<!--        <script th:src="@{/js/form-validation/FormValidationScript.js}"></script>-->
+<!--    </th:block>-->
+<!--    <script th:if="${togglePassword}" th:src="@{/js/show-password-toggle.min.js}"></script>-->
+    <script th:src="@{/scripts/main.js}"></script>
+</th:block>
+</body>
+</html>
