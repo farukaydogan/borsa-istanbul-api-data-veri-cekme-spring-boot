@@ -11,5 +11,8 @@
 
 <img width="1490" alt="Screenshot 2023-09-11 at 21 59 43" src="https://github.com/farukaydogan/borsa-istanbul-api-data-veri-cekme-spring-boot/assets/57232389/1b340ab8-d5db-45af-9990-85780eeeeec6">
 
-## Eğer web üzerinden giriş yapmak istiyorsanız [Login](http://ec2-13-53-49-197.eu-north-1.compute.amazonaws.com:8081/auth/login)
+## Eğer web üzerinden giriş yapmak istiyorsanız 
+[Register](http://ec2-13-53-49-197.eu-north-1.compute.amazonaws.com:8081/auth/register)
+[Login](http://ec2-13-53-49-197.eu-north-1.compute.amazonaws.com:8081/auth/login)
+
 <img width="1026" alt="Screenshot 2023-09-11 at 22 08 37" src="https://github.com/farukaydogan/borsa-istanbul-api-data-veri-cekme-spring-boot/assets/57232389/72913483-1d6d-496a-8eb6-c2a671c42c09">
