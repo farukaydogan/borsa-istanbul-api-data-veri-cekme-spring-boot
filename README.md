@@ -1,4 +1,5 @@
-# borsa-istanbul-api-data-veri-cekme-spring-boot
+# borsa-istanbul-api-data-veri-cekme-spring-boot-jwt-token
+
 [Document](http://ec2-13-53-49-197.eu-north-1.compute.amazonaws.com:8081/swagger-ui/index.html)
 
 ## Sisteme erismek icin kayit olunup responseden donen access_token'i istek atacaginiz requestin headerina eklemelisiniz aksi bir durumda iletisime gecebilirsiniz
