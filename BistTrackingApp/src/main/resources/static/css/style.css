@@ -1,8 +1,0 @@
-/* CSS */
-.custom-dropdown {
-  position: absolute;
-  width: 100%;
-  max-height: 200px; /* İstediğiniz yükseklik */
-  overflow-y: auto;
-  z-index: 1000;
-}
